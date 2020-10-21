@@ -1,7 +1,5 @@
-# Reservia Prototype FrontEnd
+# Ohmyfood!
 
-> Intégration de la maquette du site factice Reservia.
+> Dynamisez une page web avec des animations CSS.
 
-## Informations
-
-Dans le cadre de la [formation de web développeur](https://openclassrooms.com/fr/paths/185-developpeur-web) proposée par [OpenClassRooms](https://openclassrooms.com/), ce dépôt met à disposition le livrable qui sera mis en avant lors de la soutenance du projet n°2.
+Dans le cadre de la [formation de Développeur Web](https://openclassrooms.com/fr/paths/185-developpeur-web) proposée par [OpenClassRooms](https://openclassrooms.com/), ce dépôt met à disposition les livrables qui seront mis en avant lors de la soutenance du projet n°3.
