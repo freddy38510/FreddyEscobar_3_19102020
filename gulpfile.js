@@ -172,7 +172,7 @@ var watchSource = function (done) {
 
 // Default task
 // gulp
-exports.default = series(cleanDist, parallel(buildStyles, buildSVGs, copyFiles))
+exports.default = series(cleanDist, buildStyles, buildSVGs, copyFiles)
 
 // Watch and reload
 // gulp watch
