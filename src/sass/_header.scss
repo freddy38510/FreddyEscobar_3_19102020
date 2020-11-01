@@ -1,0 +1,26 @@
+.header {
+  background: #fff;
+}
+
+.logo {
+  font-family: $font-family-secondary;
+  font-size: 1.875rem;
+  font-weight: 400;
+  padding-bottom: 0.3em;
+  padding-top: 0.6em;
+}
+
+.location {
+  background: $white-smoke-700;
+  box-shadow: 0 30px 10px -35px rgba(0, 0, 0, 1) inset;
+  color: $grey-800;
+  display: flex;
+  font-weight: 500;
+  justify-content: center;
+  padding: 1rem 0;
+
+  .icon {
+    margin-left: -2rem;
+    margin-right: 1rem;
+  }
+}

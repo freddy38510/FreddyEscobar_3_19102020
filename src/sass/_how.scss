@@ -1,0 +1,48 @@
+.how-list {
+  font-weight: 500;
+  padding: 1.5rem 0;
+}
+
+.how-item {
+  align-items: baseline;
+  background: $white-smoke-500;
+  border-radius: 20px;
+  box-shadow: 0 6px 8px 0 rgb(0 0 0 / 12%);
+  display: flex;
+  margin-left: 0.75rem;
+  padding-bottom: 1.5rem;
+  padding-top: 1.5rem;
+}
+
+.how-item:not(:last-child) {
+  margin-bottom: 1.5rem;
+}
+
+.how-item.is-active {
+  background: $secondary-light;
+}
+
+.how-item .number {
+  align-items: center;
+  background: $primary;
+  border-radius: 100%;
+  color: #fff;
+  display: inline-flex;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  height: 1.5rem;
+  justify-content: center;
+  margin-left: -0.75rem;
+  margin-right: 1.25rem;
+  width: 1.5rem;
+}
+
+.how-item .icon {
+  align-self: center;
+  color: $grey-600;
+  margin-right: 1.25rem;
+}
+
+.how-item.is-active .icon {
+  color: $primary;
+}

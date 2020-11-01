@@ -1,0 +1,20 @@
+@keyframes hide-scroll {
+  from { overflow: hidden; }
+}
+
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes pre-slide-y {
+  from {
+    height: auto;
+    transform: translateY(0);
+  }
+}

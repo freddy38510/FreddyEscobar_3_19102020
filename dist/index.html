@@ -3,95 +3,201 @@
   <head>
     <meta charset="utf-8" />
     <title>Ohmyfood!</title>
-    <meta name="description" content="Book the menu you like." />
+    <meta
+      name="description"
+      content="Réservez le menu qui vous convient. Découvrez des restaurants d'exception, séléctionnés par nos soins."
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="/css/main.min.css" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Shrikhand&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Shrikhand&display=swap"
       rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
     />
   </head>
   <body>
-    <header id="header">
-      <h1 class="title has-secondary-family"><a href="/">ohmyfood</a></h1>
+    <div class="loading">
+      <div class="spinner">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+    <header class="has-background-white has-text-center">
+      <h1 class="logo"><a href="/">ohmyfood</a></h1>
     </header>
-    <div class="location">Paris, Belleville</div>
-    <section id="hero">
-      <h2 class="title">Book the menu you like</h2>
-      <p>Discover top-of-the-art restaurants picked for you</p>
-      <button class="button">Explore our restaurants</button>
+    <div class="location">
+      <span class="icon"><i class="fas fa-map-marker-alt"></i></span>Paris,
+      Belleville
+    </div>
+    <section class="hero has-text-center">
+      <h2 class="title">Réservez le menu qui vous convient</h2>
+      <p class="subtitle">
+        Découvrez des restaurants d'exception, séléctionnés par nos soins.
+      </p>
+      <button class="button is-primary">Explorer nos restaurants</button>
     </section>
-    <section id="how">
-      <h2 class="title">How it works</h2>
-      <ol>
-        <li>Chose a restaurant</li>
-        <li>Create your menu</li>
-        <li>Go enjoy it at the restaurant</li>
-      </ol>
+    <section class="section has-background-white">
+      <div class="container">
+        <h2 class="title is-2">Fonctionnement</h2>
+        <ol class="how-list">
+          <li class="how-item">
+            <span class="number">1</span>
+            <span class="icon"><i class="fas fa-mobile-alt fa-fw"></i></span
+            ><span>Choisissez un restaurant</span>
+          </li>
+          <li class="how-item">
+            <span class="number">2</span>
+            <span class="icon"><i class="fas fa-list-ul fa-fw"></i></span
+            >Composez votre menu
+          </li>
+          <li class="how-item is-active">
+            <span class="number">3</span>
+            <span class="icon"><i class="fas fa-store fa-fw"></i></span>Dégustez
+            au restaurant
+          </li>
+        </ol>
+      </div>
     </section>
     <main>
-      <section id="restaurants">
-        <h2 class="title">Restaurants</h2>
-        <ul>
-          <li>
-            <article class="card">
-              <img src="/img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" width="335" height="174" />
-              <div class="card-body">
-                <h3 class="title">
-                  <a href="restaurants/the-full-palette.html">
-                    The Full Palette
-                  </a>
-                </h3>
-                <p>New York</p>
-              </div>
-            </article>
-          </li>
-          <li>
-            <article class="card">
-              <img src="/img/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" width="335" height="174" />
-              <div class="card-body">
-                <h3 class="title">
-                  <a href="restaurants/the-enchanted-plate.html">
-                    The Enchanted Plate
-                  </a>
-                </h3>
-                <p>New York</p>
-              </div>
-            </article>
-          </li>
-          <li>
-            <article class="card">
-              <img src="/img/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" width="335" height="174" />
-              <div class="card-body">
-                <h3 class="title">
-                  <a href="restaurants/bastille.html">Bastille</a>
-                </h3>
-                <p>New York</p>
-              </div>
-            </article>
-          </li>
-          <li>
-            <article class="card">
-              <img src="/img/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" width="335" height="174" />
-              <div class="card-body">
-                <h3 class="title">
-                  <a href="restaurants/le-gourmand.html">Le Gourmand</a>
-                </h3>
-                <p>New York</p>
-              </div>
-            </article>
-          </li>
-        </ul>
+      <section id="restaurants" class="section">
+        <div class="container">
+          <h2 class="title is-2">Restaurants</h2>
+          <ul class="list row">
+            <li class="list-item col is-6-md is-4-lg">
+              <article class="card">
+                <div class="image is-16by9">
+                  <img
+                    src="/img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
+                    width="335"
+                    height="174"
+                  />
+                  <div class="tag is-tertiary">Nouveau</div>
+                </div>
+                <div class="card-body">
+                  <button class="button like">
+                    <i class="is-regular far fa-heart"></i
+                    ><i class="is-solid solid fas fa-heart"></i>
+                  </button>
+                  <h3 class="title is-3">
+                    <a href="restaurants/la-palette-du-gout.html">
+                      La palette du goût
+                    </a>
+                  </h3>
+                  <p>Ménilmontant</p>
+                </div>
+              </article>
+            </li>
+            <li class="list-item col is-6-md is-4-lg">
+              <article class="card">
+                <div class="image is-16by9">
+                  <img
+                    src="/img/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg"
+                    width="335"
+                    height="174"
+                  />
+                  <div class="tag is-tertiary">Nouveau</div>
+                </div>
+                <div class="card-body">
+                  <button class="button like">
+                    <i class="is-regular far fa-heart"></i
+                    ><i class="is-solid solid fas fa-heart"></i>
+                  </button>
+                  <h3 class="title is-3">
+                    <a href="restaurants/la-note-enchantee.html">
+                      La note enchantée
+                    </a>
+                  </h3>
+                  <p>Charonne</p>
+                </div>
+              </article>
+            </li>
+            <li class="list-item col is-6-md is-4-lg">
+              <article class="card">
+                <div class="image is-16by9">
+                  <img
+                    src="/img/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
+                    width="335"
+                    height="174"
+                  />
+                </div>
+                <div class="card-body">
+                  <button class="button like">
+                    <i class="is-regular far fa-heart"></i
+                    ><i class="is-solid solid fas fa-heart"></i>
+                  </button>
+                  <h3 class="title is-3">
+                    <a href="restaurants/a-la-francaise.html">À la française</a>
+                  </h3>
+                  <p>Cité Rouge</p>
+                </div>
+              </article>
+            </li>
+            <li class="list-item col is-6-md is-4-lg">
+              <article class="card">
+                <div class="image is-16by9">
+                  <img
+                    src="/img/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
+                    width="335"
+                    height="174"
+                  />
+                </div>
+                <div class="card-body">
+                  <button class="button like">
+                    <i class="is-regular far fa-heart"></i
+                    ><i class="is-solid solid fas fa-heart"></i>
+                  </button>
+                  <h3 class="title is-3">
+                    <a href="restaurants/le-delice-des-sens.html"
+                      >Le délice des sens</a
+                    >
+                  </h3>
+                  <p>Folie-Méricourt</p>
+                </div>
+              </article>
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
-    <footer id="footer">
-      <p class="title has-secondary-family has-text-bold">ohmyfood</p>
-      <ul>
-        <li><a>Suggest a restaurant</a></li>
-        <li><a>Become a partner</a></li>
-        <li><a>Legal</a></li>
-        <li><a>Contact</a></li>
-      </ul>
+    <footer class="footer has-background-grey-800">
+      <div class="container">
+        <p class="has-secondary-family">ohmyfood</p>
+        <ul>
+          <li>
+            <a>
+              <span class="icon is-small">
+                <i class="fas fa-utensils"></i>
+              </span>
+              <span>Proposer un restaurant</span>
+            </a>
+          </li>
+          <li>
+            <a>
+              <span class="icon is-small">
+                <i class="fas fa-hands-helping"></i>
+              </span>
+              <span>Devenir partenaire</span>
+            </a>
+          </li>
+          <li><a>Mentions légales</a></li>
+          <li><a href="mailto:contact@ohmyfood.com">Contact</a></li>
+        </ul>
+      </div>
     </footer>
   </body>
 </html>

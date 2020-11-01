@@ -1,0 +1,26 @@
+.footer {
+  padding: 1.625rem 0;
+
+  p {
+    font-size: 1.125rem;
+  }
+
+  li {
+    display: flex;
+    margin-bottom: 0.4375rem;
+  }
+
+  a {
+    align-items: center;
+    display: inline-flex;
+    font-weight: 500;
+  }
+
+  .icon {
+    margin-right: 1em;
+  }
+
+  .container {
+    padding: 0 1.5625rem;
+  }
+}

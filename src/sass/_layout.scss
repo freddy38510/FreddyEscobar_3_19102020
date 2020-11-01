@@ -1,0 +1,98 @@
+.container {
+  flex-grow: 1;
+  margin: 0 auto;
+  padding-left: $gap;
+  padding-right: $gap;
+  position: relative;
+  width: 100%;
+
+  @include sm {
+    max-width: 540px;
+  }
+
+  @include md {
+    max-width: 720px;
+  }
+
+  @include lg {
+    max-width: 960px;
+  }
+
+  @include xl {
+    max-width: 1140px;
+  }
+}
+
+.section {
+  padding: 2.75rem 0;
+}
+
+.list {
+  padding: 1.125rem 0;
+
+  @include sm {
+    padding: 1.25rem 0;
+  }
+}
+
+.list-item:not(:last-child) {
+  margin-bottom: 1.125rem;
+
+  @include sm {
+    margin-bottom: 1.25rem;
+  }
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -$gap;
+}
+
+.col {
+  padding-left: $gap;
+  position: relative;
+  width: 100%;
+}
+
+.col.is-6-sm {
+  @include sm {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+.col.is-3-md {
+  @include md {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+}
+
+.col.is-4-md {
+  @include md {
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+  }
+}
+
+.col.is-6-md {
+  @include md {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+.col.is-3-lg {
+  @include lg {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+}
+
+.col.is-4-lg {
+  @include lg {
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+  }
+}

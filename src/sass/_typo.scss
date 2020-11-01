@@ -1,11 +1,40 @@
-html {
-  font-family: $font-family-primary;
+.title {
+  color: #000;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.8125rem;
+  //margin-top: 0.6em;
+
+  &.is-2 {
+    margin-bottom: 0.25em;
+    margin-top: 0.125em;
+  }
+
+  &.is-3 {
+    font-size: 1.125rem;
+  }
+
+  &.is-4 {
+    font-size: 1rem;
+  }
+}
+
+.subtitle {
+  color: $grey-800;
+  font-size: 1.125rem;
+  font-weight: 300;
+  margin-bottom: 1.9375rem;
 }
 
 .has-secondary-family {
   font-family: $font-family-secondary;
+  font-weight: 400;
 }
 
 .has-text-bold {
   font-weight: 700;
+}
+
+.has-text-center {
+  text-align: center;
 }

@@ -1,0 +1,12 @@
+.has-background-white {
+  background: #fff;
+}
+
+.has-background-grey-800 {
+  background: $grey-800;
+  color: #fff;
+
+  > :not([class*='has-background']) a {
+    color: #fff;
+  }
+}
