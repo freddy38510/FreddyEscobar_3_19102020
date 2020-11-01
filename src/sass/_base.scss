@@ -4,7 +4,6 @@ html {
 }
 
 body {
-  animation: hide-scroll 3s ease-in-out 3s backwards;
   background: $white-smoke-500;
   color: #000;
   font-family: $font-family-primary;
@@ -53,6 +52,10 @@ p {
   &.is-small {
     font-size: 0.8125rem;
   }
+}
+
+.has-loading {
+  animation: hide-scroll 3s ease-in-out 3s backwards;
 }
 
 .loading {
