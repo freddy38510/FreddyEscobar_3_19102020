@@ -1,0 +1,8 @@
+{
+  "editor.tabSize": 2,
+  "[scss]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll.stylelint": true
+    }
+  }
+}
