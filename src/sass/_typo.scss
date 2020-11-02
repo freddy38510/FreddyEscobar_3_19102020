@@ -3,7 +3,14 @@
   font-size: 1.5rem;
   font-weight: 700;
   margin-bottom: 0.8125rem;
-  //margin-top: 0.6em;
+
+  &.is-1 {
+    font-family: $font-family-secondary;
+    font-size: 1.75rem;
+    font-weight: 400;
+    margin-bottom: 0.625rem;
+    margin-top: 1.25rem;
+  }
 
   &.is-2 {
     margin-bottom: 0.25em;
@@ -12,6 +19,7 @@
 
   &.is-3 {
     font-size: 1.125rem;
+    font-weight: 500;
   }
 
   &.is-4 {
@@ -24,11 +32,16 @@
   font-size: 1.125rem;
   font-weight: 300;
   margin-bottom: 1.9375rem;
+  margin-top: 0.8125rem;
 }
 
 .has-secondary-family {
   font-family: $font-family-secondary;
   font-weight: 400;
+}
+
+.has-text-semi-bold {
+  font-weight: 500;
 }
 
 .has-text-bold {
