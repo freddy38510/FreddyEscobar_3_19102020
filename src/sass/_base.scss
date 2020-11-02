@@ -44,12 +44,13 @@ p {
 .icon {
   align-items: center;
   display: inline-flex;
-  height: 1em;
+  height: 1rem;
   justify-content: center;
-  width: 1em;
+  width: 1rem;
 
-  &.is-small {
-    font-size: 0.8125rem;
+  &.is-medium {
+    height: 1.5rem;
+    width: 1.5rem;
   }
 }
 
