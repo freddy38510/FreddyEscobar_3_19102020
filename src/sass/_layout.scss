@@ -1,8 +1,6 @@
 .container {
   flex-grow: 1;
   margin: 0 auto;
-  padding-left: $gap;
-  padding-right: $gap;
   position: relative;
   width: 100%;
 
@@ -14,12 +12,28 @@
     max-width: 720px;
   }
 
-  @include lg {
-    max-width: 960px;
+  &:not(.is-max-md) {
+    @include lg {
+      max-width: 960px;
+    }
   }
 
-  @include xl {
-    max-width: 1140px;
+  &:not(.is-max-lg):not(.is-max-md) {
+    @include xl {
+      max-width: 1140px;
+    }
+  }
+
+  &:not(.is-fluid) {
+    padding-left: $gap;
+    padding-right: $gap;
+  }
+
+  &.has-padding-sm {
+    @include sm {
+      padding-left: $gap;
+      padding-right: $gap;
+    }
   }
 }
 
