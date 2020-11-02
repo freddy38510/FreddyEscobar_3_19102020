@@ -3,149 +3,157 @@
   <head>
     <meta charset="utf-8" />
     <title>Ohmyfood! - Menu Restaurant La palette du goût</title>
-    <meta name="description" content="Réservation menu Restaurant La palette du goût." />
+    <meta
+      name="description"
+      content="Réservation menu Restaurant La palette du goût."
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="/css/main.min.css" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Shrikhand&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500;600;700&family=Shrikhand&display=swap"
       rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
     />
   </head>
   <body>
     <header class="header">
-      <h1 class="title has-secondary-family"><a href="/">ohmyfood</a></h1>
+      <div class="container is-max-md">
+        <a href="/" class="go-home"
+          ><span class="icon is-medium"><i class="fas fa-arrow-left"></i></span
+        ></a>
+        <h1 class="title is-1"><a href="/">ohmyfood</a></h1>
+      </div>
     </header>
+    <div class="menu-hero"></div>
     <main>
-      <article class="menu">
-        <header>
-          <img
-            src="/img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
-            width="413"
-            height="275"
-          />
-          <h2 class="title has-secondary-family">La palette du goût</h2>
-        </header>
-        <section>
-          <h3>Entrees</h3>
-          <ul>
-            <li>
-              <div class="menu-item">
-                <h4>Escargot</h4>
+      <div class="container is-fluid has-padding-sm is-max-md">
+        <article class="menu">
+          <header class="menu-header">
+            <h2 class="title is-1">La palette du goût</h2>
+            <button class="button like">
+              <i class="is-regular far fa-heart"></i
+              ><i class="is-solid solid fas fa-heart"></i>
+            </button>
+          </header>
+          <section class="menu-section">
+            <div class="container">
+              <h3 class="title is-4 caption has-border">Entrées</h3>
+            </div>
+            <ul class="menu-list">
+              <li class="menu-item">
+                <h4 class="title is-3">Fricassée d'escargot</h4>
                 <p>
-                  <span class="menu-item-description"
-                    >With southern French spices</span
-                  >
+                  <span>Au piment d'Espelette</span>
                   <span class="menu-item-price">25€</span>
                 </p>
-              </div>
-            </li>
-            <li>
-              <div class="menu-item">
-                <h4>Duck Foie Gras</h4>
+              </li>
+              <li class="menu-item">
+                <h4 class="title is-3">Foie gras de canard mi-cuit</h4>
                 <p>
-                  <span class="menu-item-description">
-                    with black truffle shavingse
-                  </span>
+                  <span>Et ses copeaux de truffe noire</span>
                   <span class="menu-item-price">35€</span>
                 </p>
-              </div>
-            </li>
-            <li>
-              <div class="menu-item">
-                <h4>Fried egg</h4>
+              </li>
+              <li class="menu-item">
+                <h4 class="title is-3">Oeuf au plat</h4>
                 <p>
-                  <span class="menu-item-description">…</span>
+                  <span>Assaisonné à la truffe sur lit de caviar</span>
                   <span class="menu-item-price">20€</span>
                 </p>
-              </div>
-            </li>
-          </ul>
-        </section>
-        <section>
-          <h3>Main Dish</h3>
-          <ul>
-            <li>
-              <div class="menu-item">
-                <h4>Herb-Encrusted Steak</h4>
+              </li>
+            </ul>
+          </section>
+          <section class="menu-section">
+            <div class="container">
+              <h3 class="title is-4 caption has-border">Plats</h3>
+            </div>
+            <ul class="menu-list">
+              <li class="menu-item">
+                <h4 class="title is-3">Filet de boeuf aux herbes</h4>
                 <p>
-                  <span class="menu-item-description">
-                    With delicately sliced and seasoned vegetables
-                  </span>
+                  <span>Accompagné de sa ribambelle de légumes</span>
                   <span class="menu-item-price">40€</span>
                 </p>
-              </div>
-            </li>
-            <li>
-              <div class="menu-item">
-                <h4>Ox Tail Shepard's Pie</h4>
+              </li>
+              <li class="menu-item">
+                <h4 class="title is-3">Parmentier de queue de boeuf</h4>
                 <p>
-                  <span class="menu-item-description">
-                    with black truffle and pureed parsnips
-                  </span>
+                  <span>À la truffe noire sur sa purée de panais</span>
                   <span class="menu-item-price">35€</span>
                 </p>
-              </div>
-            </li>
-            <li>
-              <div class="menu-item">
-                <h4>Filet of Sole</h4>
+              </li>
+              <li class="menu-item">
+                <h4 class="title is-3">Filet de turbot</h4>
                 <p>
-                  <span class="menu-item-description">
-                    with citrus dressing
-                  </span>
+                  <span>Aux agrumes</span>
                   <span class="menu-item-price">44€</span>
                 </p>
-              </div>
-            </li>
-          </ul>
-        </section>
-        <section>
-          <h3>Desserts</h3>
-          <ul>
-            <li>
-              <div class="menu-item">
-                <h4>Paris-Brest</h4>
+              </li>
+            </ul>
+          </section>
+          <section class="menu-section">
+            <div class="container">
+              <h3 class="title is-4 caption has-border">Desserts</h3>
+            </div>
+            <ul class="menu-list">
+              <li class="menu-item">
+                <h4 class="title is-3">Paris-Brest</h4>
                 <p>
-                  <span class="menu-item-description"> Revisited </span>
+                  <span>Revisité</span>
                   <span class="menu-item-price">18€</span>
                 </p>
-              </div>
-            </li>
-            <li>
-              <div class="menu-item">
-                <h4>Chocolate Macaroons</h4>
+              </li>
+              <li class="menu-item">
+                <h4 class="title is-3">Macaron au chocolat d'exception</h4>
                 <p>
-                  <span class="menu-item-description"
-                    >With vanilla ice cream</span
-                  >
+                  <span>Et glace à la vanille de Madagascar</span>
                   <span class="menu-item-price">22€</span>
                 </p>
-              </div>
-            </li>
-            <li>
-              <div class="menu-item">
-                <h4>Chocolate Mousse</h4>
+              </li>
+              <li class="menu-item">
+                <h4 class="title is-3">Mousse au chocolat</h4>
                 <p>
-                  <span class="menu-item-description">
-                    With spices and black truffle
-                  </span>
+                  <span>Au piment d'Espelette et à la truffe noire</span>
                   <span class="menu-item-price">23€</span>
                 </p>
-              </div>
-            </li>
-          </ul>
-        </section>
-        <button class="button">Order</button>
-      </article>
+              </li>
+            </ul>
+          </section>
+          <div class="order">
+            <button class="button is-primary">Commander</button>
+          </div>
+        </article>
+      </div>
     </main>
-    <footer class="footer">
-      <p class="title has-secondary-family has-text-bold">ohmyfood</p>
-      <ul>
-        <li><a>Proposer un restaurant</a></li>
-        <li><a>Devenir partenaire</a></li>
-        <li><a>Mentions légales</a></li>
-        <li><a>Contact</a></li>
-      </ul>
+    <footer class="footer has-background-grey-800">
+      <div class="container is-max-md">
+        <p class="has-secondary-family">ohmyfood</p>
+        <ul>
+          <li>
+            <a class="has-text-semi-bold">
+              <span class="icon is-text-small">
+                <i class="fas fa-utensils"></i>
+              </span>
+              <span>Proposer un restaurant</span>
+            </a>
+          </li>
+          <li>
+            <a class="has-text-semi-bold">
+              <span class="icon is-text-small">
+                <i class="fas fa-hands-helping"></i>
+              </span>
+              <span>Devenir partenaire</span>
+            </a>
+          </li>
+          <li><a>Mentions légales</a></li>
+          <li><a href="mailto:contact@ohmyfood.com">Contact</a></li>
+        </ul>
+      </div>
     </footer>
   </body>
 </html>
