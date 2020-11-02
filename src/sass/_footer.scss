@@ -1,6 +1,14 @@
 .footer {
   padding: 1.625rem 0;
 
+  @include sm {
+    padding: 2rem 0;
+  }
+
+  @include lg {
+    padding: 2.5rem 0;
+  }
+
   p {
     font-size: 1.125rem;
   }
