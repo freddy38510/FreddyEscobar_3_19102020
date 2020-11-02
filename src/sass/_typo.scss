@@ -25,6 +25,16 @@
   &.is-4 {
     font-size: 1rem;
   }
+
+  &.has-border::after {
+    background: $tertiary;
+    content: '';
+    display: block;
+    height: 3px;
+    margin-bottom: 1rem;
+    margin-top: 0.375rem;
+    width: 40px;
+  }
 }
 
 .subtitle {
@@ -50,4 +60,9 @@
 
 .has-text-center {
   text-align: center;
+}
+
+.caption {
+  font-weight: 300;
+  text-transform: uppercase;
 }
