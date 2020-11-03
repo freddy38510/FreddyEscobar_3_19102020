@@ -4,6 +4,7 @@
   box-shadow: 0 2px 16px 0 rgba(0, 0, 0, 0.12);
   font-size: 1.125rem;
   font-weight: 300;
+  position: relative;
 
   img {
     border-radius: 14px 14px 0 0;
@@ -28,6 +29,20 @@
 
   p {
     margin-bottom: 0;
+  }
+
+  &.is-clickable .main-link::after { bottom: 0;
+    content: '';
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1;
+  }
+
+  &.is-clickable .button {
+    position: relative;
+    z-index: 2;
   }
 }
 
