@@ -41,3 +41,14 @@
     @content;
   }
 }
+
+@mixin menu-item-delay-animation {
+  $n: 5;
+  $delay: 0.5;
+
+  @for $i from 1 through $n {
+    &:nth-child(#{$i}) {
+      animation-delay: #{$delay + (0.2 * ($i - 1))}s;
+    }
+  }
+}

@@ -70,3 +70,9 @@
   font-weight: 300;
   text-transform: uppercase;
 }
+
+.has-text-truncated {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
