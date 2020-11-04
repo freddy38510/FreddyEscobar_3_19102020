@@ -73,20 +73,18 @@
     position: absolute;
   }
 
-  .is-solid::before,
-  .is-regular::before {
-    background-clip: text;
+  .is-solid,
+  .is-regular {
     background-position: top;
     background-size: 150% 250%;
-    -webkit-text-fill-color: transparent;
     transition: background-position 0.5s ease-in-out;
   }
 
-  .is-regular::before {
+  .is-regular {
     background-image: linear-gradient(to top, #fff0 50%, #000 50%);
   }
 
-  .is-solid::before {
+  .is-solid {
     background-image: linear-gradient(to top,
     $secondary -15%,
     $primary 50%,
@@ -97,8 +95,8 @@
 .button.like:hover,
 .button.like:focus,
 .button.like:active {
-  .is-solid::before,
-  .is-regular::before {
+  .is-solid,
+  .is-regular {
     background-position: bottom;
   }
 }
