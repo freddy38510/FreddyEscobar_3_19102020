@@ -110,6 +110,14 @@ html {
   color: #fff;
 }
 
+.has-text-white {
+  color: #fff;
+}
+
+.has-text-white-smoke-500 {
+  color: #f6f6f6;
+}
+
 html {
   font-size: 16px;
   text-size-adjust: 100%;
@@ -358,28 +366,25 @@ p {
   flex: 1;
   position: absolute;
 }
-.button.like .is-solid::before,
-.button.like .is-regular::before {
-  -webkit-background-clip: text;
-          background-clip: text;
+.button.like .is-solid,
+.button.like .is-regular {
   background-position: top;
   background-size: 150% 250%;
-  -webkit-text-fill-color: transparent;
   transition: background-position 0.5s ease-in-out;
 }
-.button.like .is-regular::before {
+.button.like .is-regular {
   background-image: linear-gradient(to top, #fff0 50%, #000 50%);
 }
-.button.like .is-solid::before {
+.button.like .is-solid {
   background-image: linear-gradient(to top, #ff79da -15%, #9356dc 50%, #fff0 50%);
 }
 
-.button.like:hover .is-solid::before,
-.button.like:hover .is-regular::before,
-.button.like:focus .is-solid::before,
-.button.like:focus .is-regular::before,
-.button.like:active .is-solid::before,
-.button.like:active .is-regular::before {
+.button.like:hover .is-solid,
+.button.like:hover .is-regular,
+.button.like:focus .is-solid,
+.button.like:focus .is-regular,
+.button.like:active .is-solid,
+.button.like:active .is-regular {
   background-position: bottom;
 }
 
