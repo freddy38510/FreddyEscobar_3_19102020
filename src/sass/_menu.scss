@@ -89,11 +89,11 @@
 
 .menu-item:hover {
   .menu-item-action {
-    width: 3.75rem;
+    margin-right: 0;
   }
 
   .menu-item-action .icon {
-    animation: rotate 0.4s ease-in-out 1 forwards;
+    animation: rotate 0.6s ease-in-out 1 forwards;
   }
 }
 
@@ -140,9 +140,11 @@
   border-radius: 0 14px 14px 0;
   display: flex;
   justify-content: center;
+  margin-right: -3.75rem;
   overflow: hidden;
-  transition: width 0.4s ease-in-out;
-  width: 0;
+  padding: 0.5rem;
+  transition: margin-right 0.5s ease-in-out;
+  width: 3.75rem;
 
   .icon {
     color: #fff;
