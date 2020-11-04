@@ -411,10 +411,7 @@ p {
 .card .like {
   float: right;
   margin-right: 0.5em;
-  margin-top: 0.25rem;
-}
-.card p {
-  margin-bottom: 0;
+  margin-top: 0.375rem;
 }
 .card.is-clickable .main-link::after {
   bottom: 0;
@@ -436,6 +433,11 @@ p {
   top: 0.75rem;
 }
 
+.card-body p {
+  font-size: 1.0625rem;
+  margin-bottom: 0;
+}
+
 .tag {
   border-radius: 2px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
@@ -454,8 +456,14 @@ p {
   display: flex;
   justify-content: center;
 }
+.header .title {
+  font-size: 1.875rem;
+  margin-bottom: 0.3em;
+  margin-top: 0.6em;
+}
 
 .go-home {
+  font-size: 1.1875rem;
   left: 1.25rem;
   position: absolute;
   top: 1.375rem;
@@ -707,7 +715,7 @@ p {
   display: inline-flex;
 }
 .footer .icon {
-  margin-right: 0.75em;
+  margin-right: 0.5em;
 }
 .footer .container {
   padding: 0 1.5625rem;
