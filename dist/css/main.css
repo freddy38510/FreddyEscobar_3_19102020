@@ -369,14 +369,14 @@ p {
 .button.like .is-solid,
 .button.like .is-regular {
   background-position: top;
-  background-size: 150% 250%;
+  background-size: 100% 200%;
   transition: background-position 0.5s ease-in-out;
 }
 .button.like .is-regular {
-  background-image: linear-gradient(to top, #fff0 50%, #000 50%);
+  background-image: linear-gradient(to top, #fff0 50%, #000 0);
 }
 .button.like .is-solid {
-  background-image: linear-gradient(to top, #ff79da -15%, #9356dc 50%, #fff0 50%);
+  background-image: linear-gradient(to top, #ff79da, #9356dc 50%, #fff0 0);
 }
 
 .button.like:hover .is-solid,

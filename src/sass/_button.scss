@@ -76,19 +76,19 @@
   .is-solid,
   .is-regular {
     background-position: top;
-    background-size: 150% 250%;
+    background-size: 100% 200%;
     transition: background-position 0.5s ease-in-out;
   }
 
   .is-regular {
-    background-image: linear-gradient(to top, #fff0 50%, #000 50%);
+    background-image: linear-gradient(to top, #fff0 50%, #000 0);
   }
 
   .is-solid {
     background-image: linear-gradient(to top,
-    $secondary -15%,
+    $secondary,
     $primary 50%,
-    #fff0 50%);
+    #fff0 0);
   }
 }
 
